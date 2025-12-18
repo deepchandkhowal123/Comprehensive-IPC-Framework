@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inter-Process Communication Visualization</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="gui.css">
+</head>
+<body>
+
+<h1>Inter-Process Communication Visualization</h1>
+
+<div class="controls">
+  <select id="fromProcess">
+    <option value="P1">Process 1</option>
+    <option value="P2">Process 2</option>
+  </select>
+
+  →
+
+  <select id="toProcess">
+    <option value="P2">Process 2</option>
+    <option value="P1">Process 1</option>
+  </select>
+
+  <select id="method">
+    <option>Named Pipe</option>
+    <option>Socket</option>
+  </select>
+
+  <input id="msg" placeholder="Enter message"/>
+  <button onclick="send()">Send Message</button>
+  <button onclick="reset()">Reset</button>
+</div>
+
+<div class="canvas">
+  <div class="process left">Process 1</div>
+  <div class="line"></div>
+  <div class="process right">Process 2</div>
+  <div id="packet"></div>
+</div>
+
+<h3>Event Log</h3>
+<pre id="log"></pre>
+
+<h3>Latency Graph (ms)</h3>
+<canvas id="latencyChart" width="900" height="300"></canvas>
+
+<script src="renderer.js"></script>
+</body>
+</html>

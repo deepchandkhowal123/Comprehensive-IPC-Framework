@@ -1,0 +1,13 @@
+{
+  "name": "comprehensive-ipc-framework",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node index.js",
+    "socket": "node processes/socketServer.js",
+    "gui": "npx electron ."
+  },
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}

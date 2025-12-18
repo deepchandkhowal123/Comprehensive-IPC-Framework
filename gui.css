@@ -1,0 +1,67 @@
+body {
+  font-family: Arial;
+  background: #f4f6fb;
+  text-align: center;
+}
+
+.controls, .method {
+  margin: 15px;
+}
+
+input, select, button {
+  padding: 8px;
+  margin: 5px;
+}
+
+.canvas {
+  position: relative;
+  width: 900px;
+  height: 300px;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+}
+
+.process {
+  position: absolute;
+  top: 130px;
+  width: 110px;
+  height: 110px;
+  background: #3498db;
+  color: white;
+  border-radius: 50%;
+  line-height: 110px;
+  font-weight: bold;
+}
+
+.left { left: 80px; }
+.right { right: 80px; }
+
+.line {
+  position: absolute;
+  top: 185px;
+  left: 190px;
+  right: 190px;
+  height: 3px;
+  background: #3498db;
+}
+
+#packet {
+  position: absolute;
+  top: 175px;
+  left: 190px;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  display: none;
+}
+
+pre {
+  width: 900px;
+  margin: auto;
+  text-align: left;
+  background: #111;
+  color: #0f0;
+  padding: 10px;
+}
