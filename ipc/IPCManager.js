@@ -10,4 +10,4 @@ class IPCManager {
   }
 }
 module.exports = IPCManager;
-    
+      
