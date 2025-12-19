@@ -15,3 +15,4 @@ class PipeIPC {
 }
 
 module.exports = PipeIPC;
+    
